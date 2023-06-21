@@ -1,40 +1,21 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project. Pull Requests are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
-
-Go to [Coding Exercise](#coding-exercise) for coding specific questions
-
-## Download PDF/Epub formats
-
-You can download the PDF and Epub version of this repository from the latest run on the [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
+> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). PDF and Epub versions available at [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
 
 ---
 
 <p align="center">
   <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo">
+    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
   </a>
   <p align="center">
     <ol>
-    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JavaScript beginner to confidently building your own projects</li>
+    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JS beginner to confidently building your own projects</li>
     <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
     <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
     </ol>
   </p>
 </p>
-
----
-
-<div align="center">
-    <p>
-        <a href="https://www.youtube.com/watch?v=Zb4dPi7CANU">
-            JavaScript Interview Questions | Top JavaScript Interview Questions and Answers.
-            <div>
-                <img src="https://img.youtube.com/vi/Zb4dPi7CANU/0.jpg" width="220" height="150" alt="JavaScript">
-            </div>
-        </a>
-    </p>
-</div>
 
 ---
 
@@ -478,6 +459,20 @@ You can download the PDF and Epub version of this repository from the latest run
 | 434 | [What is debouncing?](#what-is-debouncing)                                                                                                                        |
 | 435 | [What is throttling?](#what-is-throttling)                                                                                                                        |
 | 436 | [What is optional chaining?](#what-is-optional-chaining)                                                                                                          |
+| 437 | [What is an environment record?](#what-is-an-environment-record)                                                                                                  |
+| 438 | [How to verify if a variable is an array?](#how-to-verify-if-a-variable-is-an-array)                                                                              |
+| 439 | [What is pass by value and pass by reference?](#what-is-pass-by-value-and-pass-by-reference)                                                                      |
+| 440 | [What are the differences between primitives and non-primitives?](#what-are-the-differences-between-primitives-and-non-primitives)                                |
+| 441 | [What are hidden classes?](#what-are-hidden-classes)                                                                                                              |
+| 442 | [What is inline caching?](#what-is-inline-caching)                                                                                                                |
+| 443 | [How do you create your own bind method using either call or apply method?](#how-do-you-create-your-own-bind-method-using-either-call-or-apply-method)            |
+| 444 | [What are the differences between pure and impure functions?](#what-are-the-differences-between-pure-and-impure-functions?)  
+| 445 | [What is  referential transparency?](#what-is-referential-transparency)                                    |
+| 446 | [What are the possible side-effects in javascript?](#what-are-the-possible-side-effects-in-javascript)    |
+| 447 | [What are compose and pipe functions?](#what-are-compose-and-pipe-functions)                               |
+| 448 | [What is module pattern?](#what-is-module-pattern)                                                         |
+| 449 | [What is Functon Composition?](#what-is-function-composition) |
+| 450 | [How to use await outside of async function prior to ES2022?](#how-to-use-await-outside-of-async-function-prior-to-es2022) |
 
 1. ### What are the possible ways to create objects in JavaScript
 
@@ -587,7 +582,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
    **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.
 
-   The prototype on object instance is available through **Object.getPrototypeOf(object)** or \***\*proto\*\*** property whereas prototype on constructors function is available through **Object.prototype**.
+   The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto__** property whereas prototype on constructors function is available through **Object.prototype**.
 
    ![Screenshot](images/prototype_chain.png)
 
@@ -902,7 +897,7 @@ You can download the PDF and Epub version of this repository from the latest run
         let age = 30;
         var salary = 10000;
       }
-      console.log(salary); //10000 (accessible to due function scope)
+      console.log(salary); //10000 (accessible due to function scope)
       console.log(age); //error: age is not defined(due to block scope)
     }
     userDetails("John");
@@ -1574,7 +1569,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 61. ### What are the main rules of promise
 
-    A promise must follow a specific set of rules,
+    A promise must follow a specific set of rules:
 
     1. A promise is an object that supplies a standard-compliant `.then()` method
     2. A pending promise may transition into either fulfilled or rejected state
@@ -1704,7 +1699,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 69. ### What is the purpose of double exclamation
 
-    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, true.
+    The double exclamation or negation(!!) ensures the resulting type is a boolean. If it was falsey (e.g. 0, null, undefined, etc.), it will be false, otherwise, it will be true.
     For example, you can test IE version using this expression as below,
 
     ```javascript
@@ -1743,6 +1738,7 @@ You can download the PDF and Epub version of this repository from the latest run
     ```javascript
     typeof "John Abraham"; // Returns "string"
     typeof (1 + 2); // Returns "number"
+    typeof [1, 2, 3] // Returns "object" because all arrays are also objects
     ```
 
     **[⬆ Back to Top](#table-of-contents)**
@@ -3240,12 +3236,22 @@ You can download the PDF and Epub version of this repository from the latest run
 
 176. ### What is the difference between proto and prototype
 
-     The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new
+     The `__proto__` object is the actual object that is used in the lookup chain to resolve methods, etc. Whereas `prototype` is the object that is used to build `__proto__` when you create an object with new.
 
      ```javascript
      new Employee().__proto__ === Employee.prototype;
      new Employee().prototype === undefined;
      ```
+
+     There are few more differences,
+
+     | feature             | Prototype                            | proto                                      |
+     | ------------------- | ------------------------------------- | ----------------------------------------------- |
+     | Access   | All the function constructors have prototype properties.  |   All the objects have \_\_proto__ property                      |
+     | Purpose      | Used to reduce memory wastage with a single copy of function               | Used in lookup chain to resolve methods, constructors etc.                        |
+     | ECMAScript      | Introduced in ES6               | Introduced in ES5                          |
+     | Usage             | Frequently used                             | Rarely used                                 |
+
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -3353,7 +3359,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      function toTitleCase(str) {
        return str.replace(/\w\S*/g, function (txt) {
-         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+         return txt.charAt(0).toUpperCase() + txt.substring(1).toLowerCase();
        });
      }
      toTitleCase("good morning john"); // Good Morning John
@@ -3519,7 +3525,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 192. ### How do you copy properties from one object to other
 
-     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the target object. The syntax would be as below,
+     You can use the Object.assign() method which is used to copy the values and properties from one or more source objects to a target object. It returns the target object which has properties and values copied from the source objects. The syntax would be as below,
 
      ```javascript
      Object.assign(target, ...sources);
@@ -3945,7 +3951,7 @@ You can download the PDF and Epub version of this repository from the latest run
        language : "en",
        get lang() {
          return this.language;
-       }
+       },
        set lang(lang) {
        this.language = lang;
        }
@@ -4241,8 +4247,9 @@ You can download the PDF and Epub version of this repository from the latest run
 
 236. ### What is an event loop
 
-     The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. The JavaScript engine doesn't start processing the event loop until the async function has finished executing the code.
-     **Note:** It allows Node.js to perform non-blocking I/O operations even though JavaScript is single-threaded.
+     The event loop is a process that continuously monitors both the call stack and the event queue and checks whether or not the call stack is empty. If the call stack is empty and there are pending events in the event queue, the event loop dequeues the event from the event queue and pushes it to the call stack. The call stack executes the event, and any additional events generated during the execution are added to the end of the event queue.
+     
+     **Note:** The event loop allows Node.js to perform non-blocking I/O operations, even though JavaScript is single-threaded, by offloading operations to the system kernel whenever possible. Since most modern kernels are multi-threaded, they can handle multiple operations executing in the background.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -5037,7 +5044,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 284. ### How do I modify the url without reloading the page
 
-     The `window.location.url` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
+     The `window.location.href` property will be helpful to modify the url but it reloads the page. HTML5 introduced the `history.pushState()` and `history.replaceState()` methods, which allow you to add and modify history entries, respectively. For example, you can use pushState as below,
 
      ```javascript
      window.history.pushState("page2", "Title", "/page2.html");
@@ -5465,7 +5472,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 308. ### What are default parameters
 
-     In E5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
+     In ES5, we need to depend on logical OR operators to handle default values of function parameters. Whereas in ES6, Default function parameters feature allows parameters to be initialized with default values if no value or undefined is passed. Let's compare the behavior with an examples,
 
      ```javascript
      //ES5
@@ -5494,7 +5501,7 @@ You can download the PDF and Epub version of this repository from the latest run
 309. ### What are template literals
 
      Template literals or template strings are string literals allowing embedded expressions. These are enclosed by the back-tick (`) character instead of double or single quotes.
-     In E6, this feature enables using dynamic expressions as below,
+     In ES6, this feature enables using dynamic expressions as below,
 
      ```javascript
      var greeting = `Welcome to JS World, Mr. ${firstName} ${lastName}.`;
@@ -5544,7 +5551,7 @@ You can download the PDF and Epub version of this repository from the latest run
      ```javascript
      //Without nesting templates
       const iconStyles = `icon ${ isMobilePlatform() ? '' :
-       (user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
+        user.isAuthorized ? 'icon-submit' : 'icon-disabled'}`;
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -5883,16 +5890,16 @@ You can download the PDF and Epub version of this repository from the latest run
 
 332. ### Is JavaScript faster than server side script
 
-     Yes, JavaScript is faster than server side script. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
+     Yes, JavaScript is faster than server side scripts. Because JavaScript is a client-side script it does not require any web server’s help for its computation or calculation. So JavaScript is always faster than any server-side script like ASP, PHP, etc.
 
      **[⬆ Back to Top](#table-of-contents)**
 
 333. ### How do you get the status of a checkbox
 
-     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `True` means the checkbox is checked otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below,
+     You can apply the `checked` property on the selected checkbox in the DOM. If the value is `true` it means the checkbox is checked, otherwise it is unchecked. For example, the below HTML checkbox element can be access using javascript as below:
 
      ```html
-     <input type="checkbox" name="checkboxname" value="Agree" /> Agree the
+     <input type="checkbox" id="checkboxname" value="Agree" /> Agree the
      conditions<br />
      ```
 
@@ -5904,7 +5911,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
 334. ### What is the purpose of double tilde operator
 
-     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is going to be a quicker substitute for Math.floor().
+     The double tilde operator(~~) is known as double NOT bitwise operator. This operator is a slightly quicker substitute for Math.floor().
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -6853,9 +6860,33 @@ You can download the PDF and Epub version of this repository from the latest run
 
 389. ### What are different event loops
 
+     In JavaScript, there are multiple event loops that can be used depending on the context of your application. The most common event loops are:
+
+    1. The Browser Event Loop
+    2. The Node.js Event Loop
+
+    - Browser Event Loop: The Browser Event Loop is used in client-side JavaScript applications and is responsible for handling events that occur within the browser environment, such as user interactions (clicks, keypresses, etc.), HTTP requests, and other asynchronous actions.
+
+    - The Node.js Event Loop is used in server-side JavaScript applications and is responsible for handling events that occur within the Node.js runtime environment, such as file I/O, network I/O, and other asynchronous actions.
+
      **[⬆ Back to Top](#table-of-contents)**
 
 390. ### What is the purpose of queueMicrotask
+    
+     The `queueMicrotask` function is used to schedule a microtask, which is a function that will be executed asynchronously in the microtask queue. The purpose of `queueMicrotask` is to ensure that a function is executed after the current task has finished, but before the browser performs any rendering or handles user events.
+
+     Example:
+
+     ```javascript
+     console.log('Start'); //1
+
+     queueMicrotask(() => {
+       console.log('Inside microtask'); // 3
+     });
+
+     console.log('End'); //2
+     ```
+     By using queueMicrotask, you can ensure that certain tasks or callbacks are executed at the earliest opportunity during the JavaScript event loop, making it useful for performing work that needs to be done asynchronously but with higher priority than regular `setTimeout` or `setInterval` callbacks.
 
      **[⬆ Back to Top](#table-of-contents)**
 
@@ -7339,7 +7370,7 @@ You can download the PDF and Epub version of this repository from the latest run
 
      new Myfunc(); // called with new
      Myfunc(); // not called with new
-     Myfunc.call({}); not called with new
+     Myfunc.call({}); // not called with new
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7458,12 +7489,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
      // key are the property keys
      for (let key in arr) {
-       console.log(key);
+       console.log(key); // 0, 1, 2 & newValue
      }
 
      // value are the property values
      for (let value of arr) {
-       console.log(value);
+       console.log(value); // a, b, c
      }
      ```
 
@@ -7520,9 +7551,9 @@ You can download the PDF and Epub version of this repository from the latest run
      Since both IIFE and void operator discard the result of an expression, you can avoid the extra brackets using `void operator` for IIFE as below,
 
      ```js
-     void (function (dt) {
+     void function (dt) {
        console.log(dt.toLocaleTimeString());
-     })(new Date());
+     }(new Date());
      ```
 
      **[⬆ Back to Top](#table-of-contents)**
@@ -7605,8 +7636,12 @@ You can download the PDF and Epub version of this repository from the latest run
      console.log("Street: Commonwealth");
      console.log("City: Los Angeles");
      console.log("State: California");
-
+     
+     // Close nested group
      console.groupEnd();
+    
+     // Close outer group
+     console.groupEnd()
      ```
 
      You can also use `console.groupCollapsed()` instead of `console.group()` if you want the groups to be collapsed by default.
@@ -7657,8 +7692,13 @@ You can download the PDF and Epub version of this repository from the latest run
         console.log(justiceLeague); // ['Superman', empty, ,'Batman']
         ```
      4. **Increase length property:** Increasing length property of an array
-        `js const justiceLeague = ['Superman', 'Aquaman', 'Batman']; justiceLeague.length = 5; console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty] `
-        **[⬆ Back to Top](#table-of-contents)**
+        ```js
+        const justiceLeague = ['Superman', 'Aquaman', 'Batman'];
+        justiceLeague.length = 5;
+        console.log(justiceLeague); // ['Superman', 'Aquaman', 'Batman', empty, empty]
+        ```
+	
+     **[⬆ Back to Top](#table-of-contents)**
 
 429. ### What is the difference between setTimeout, setImmediate and process.nextTick?
 
@@ -7892,6 +7932,257 @@ You can download the PDF and Epub version of this repository from the latest run
       console.log(adventurer.someNonExistentMethod?.());
       // expected output: undefined
      ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+437. ### What is an environment record?
+
+     According to ECMAScript specification 262 (9.1):
+
+     >[Environment Record](https://262.ecma-international.org/12.0/#sec-environment-records) is a specification type used to define the association of Identifiers to specific variables and functions, based upon the lexical nesting structure of ECMAScript code.
+     
+     Usually an Environment Record is associated with some specific syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement.
+     
+     Each time such code is evaluated, a new Environment Record is created to record the identifier bindings that are created by that code.
+
+     **[⬆ Back to Top](#table-of-contents)**
+     
+438. ### How to verify if a variable is an array?
+
+     It is possible to check if a variable is an array instance using 3 different ways,
+
+      1. Array.isArray() method:
+
+         The `Array.isArray(value)` utility function is used to determine whether value is an array or not. This function returns a true boolean value if the variable is an array and a false value if it is not.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          Array.isArray(numbers);  // true
+          Array.isArray(user); //false
+          ```
+
+      2. instanceof operator:
+          
+          The instanceof operator is used to check the type of an array at run time. It returns true if the type of a variable is an Array other false for other type.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          console.log(numbers instanceof Array);  // true
+          console.log(user instanceof Array);  // false
+          ```
+
+      3. Checking constructor type:
+
+          The constructor property of the variable is used to determine whether the variable Array type or not.
+
+          ```javascript
+          const numbers = [1, 2, 3];
+          const user = { name: 'John' };
+          console.log(numbers.constructor === Array);  // true
+          console.log(user.constructor === Array);  // false
+          ``` 
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+439. ### What is pass by value and pass by reference?
+     Pass-by-value creates a new space in memory and makes a copy of a value. Primitives such as string, number, boolean etc will actually create a new copy. Hence, updating one value doesn't impact the other value. i.e, The values are independent of each other.
+
+     ```javascript
+     let a = 5;
+     let b = a;
+
+     b++;
+     console.log(a, b); //5, 6
+     ```
+     In the above code snippet, the value of `a` is assigned to `b` and the variable `b` has been incremented. Since there is a new space created for variable `b`, any update on this variable doesn't impact the variable `a`.
+
+     Pass by reference doesn't create a new space in memory but the new variable adopts a memory address of an initial variable. Non-primitives such as objects, arrays and functions gets the reference of the initiable variable. i.e, updating one value will impact the other variable.
+
+     ```javascript
+     let user1 = {
+        name: 'John',
+        age: 27
+     };
+     let user2 = user1;
+     user2.age = 30;
+
+     console.log(user1.age, user2.age); // 30, 30
+     ```
+
+     In the above code snippet, updating the `age` property of one object will impact the other property due to the same reference.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+440. ### What are the differences between primitives and non-primitives?
+
+     JavaScript language has both primitives and non-primitives but there are few differences between them as below,
+
+     | Primitives | Non-primitives |
+     |---- | ---------
+     | These types are predefined | Created by developer |
+     | These are immutable | Mutable |
+     | Compare by value | Compare by reference |
+     | Stored in Stack | Stored in heap |
+     | Contain certain value | Can contain NULL too |
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+443. ### How do you create your own bind method using either call or apply method?
+
+     The custom bind function needs to be created on Function prototype inorder to use it as other builtin functions. This custom function should return a function similar to original bind method and the implementation of inner function needs to use apply method call. 
+     
+     The function which is going to bind using custom `myOwnBind` method act as the attached function(`boundTargetFunction`) and argument as the object for `apply` method call.
+
+     ```js
+      Function.prototype.myOwnBind = function(whoIsCallingMe) {
+        if (typeof this !== "function") {
+          throw new Error(this + "cannot be bound as it's not callable");
+        }
+        const boundTargetFunction = this;
+        return function() {
+          boundTargetFunction.apply(whoIsCallingMe, arguments);
+        }
+      }
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+444. ### What are the differences between pure and impure functions?
+
+      Some of the major differences between pure and impure function are as below,
+
+  | Pure function | Impure function                                         |
+  | -------- | ------------------------------------------------------- |
+  | It has no side effects  | It causes side effects                       |
+  | It is always return the same result         | It returns different result on each call |
+  | Easy to read and debug | Difficult to read and debug because they are affected by extenal code       
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+445. ### What is referential transparency?
+
+  An expression in javascript can be replaced by its value without affecting the behaviour of the program is called referential transparency. Pure functions are referentially transparent.
+
+  ```javascript
+  const add = (x,y) => x + y;
+  const multiplyBy2 = (x) => x * 2;
+
+  //Now add (2, 3) can be replaced by 5.
+
+  multiplyBy2(add(2, 3)); 
+  ```
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+446. ### What are the possible side-effects in javascript?
+  A side effect is the modification of state through the invocation of a function or expression. These side effects makes our function impure by default. Below are some side effects which makes function impure,
+
+  1. Making an HTTP request. Asynchronous functions such as fetch and promise are impure.
+  2. DOM manipulations
+  3. Mutating the input data
+  4. Printing to a screen or console: For example, console.log() and alert() 
+  5. Fetching the current time
+  6. Math.random() calls: Modifies the internal state of Math object
+
+
+  **[⬆ Back to Top](#table-of-contents)**
+
+447. ### What are compose and pipe functions?
+    
+     The "compose" and "pipe" are two techniques commonly used in functional programming to simplify complex operations and make code more readable. They are not native in JavaScript and higher order functions. the `compose()` applies right to left any number of functions to the output of the previous function.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+448. ### What is module pattern?
+     Module pattern is a designed pattern used to wrap a set of variables and functions together in a single scope returned as an object. JavaScript doesn't have access specifiers similar to other languages(Java, Pythong etc) to provide private scope. It uses IIFE (Immediately invoked function expression) to allow for private scopes. i.e, a closure that protect variables and methods.
+
+     The module pattern look like below,
+
+     ```javascript
+      (function() {
+      // Private variables or functions goes here.
+
+
+      return {
+          // Return public variables or functions here.
+      }
+
+
+      })();
+     ```
+
+     Let's see an example of module pattern for an employee with private and public access,
+
+     ```javascript
+     const createEmployee = (function () {
+        // Private
+        const name = "John";
+        const department = "Sales";
+        const getEmployeeName = () => name;
+        const getDepartmentName = () => department;
+
+
+        // Public
+        return {
+          name,
+          department,
+          getName: () => getEmployeeName(),
+          getDepartment: () => getDepartmentName(),
+        };
+      })();
+
+
+      console.log(createEmployee.name);
+      console.log(createEmployee.department);
+      console.log(createEmployee.getName());
+      console.log(createEmployee.getDepartment());
+     ```
+
+     **Note:** It mimic the concepts of classes with private variables and methods.
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+449. ### What is Function Composition?
+     It is an approach where the result of one function is passed on to the next function, which is passed to another until the final function is executed for the final result.
+     
+     ```javascript
+      //example
+      const double = x => x * 2
+      const square = x => x * x
+
+      var output1 = double(2);
+      var output2 = square(output1);
+      console.log(output2);
+
+      var output_final = square(double(2));
+      console.log(output_final);
+     ```
+
+     **[⬆ Back to Top](#table-of-contents)**
+
+450. ### How to use await outside of async function prior to ES2022?
+     Prior to ES2022, if you attempted to use an await outside of an async function resulted in a SyntaxError. 
+
+     ```javascript
+     await Promise.resolve(console.log('Hello await')); // SyntaxError: await is only valid in async function
+     ```
+     
+     But you can fix this issue with an alternative IIFE (Immediately Invoked Function Expression) to get access to the feature.
+
+     ```javascript
+      (async function() {
+        await Promise.resolve(console.log('Hello await')); // Hello await
+      }());
+     ```
+     
+     In ES2022, you can write top-level await without writing any hacks.
+     ```javascript
+     await Promise.resolve(console.log('Hello await')); //Hello await
+     ```
+
+  **[⬆ Back to Top](#table-of-contents)**   
 
 ### Coding Exercise
 
@@ -8922,7 +9213,19 @@ if (!typeof myString === "number") {
 
 ##### Answer: 4
 
-The return value of `typeof myNumber (OR) typeof myString` is always the truthy value (either "number" or "string"). Since ! operator converts the value to a boolean value, the value of both `!typeof myNumber or !typeof myString` is always false. Hence the if condition fails and control goes to else block.
+The return value of `typeof myNumber` or `typeof myString` is always a truthy value (either "number" or "string"). The ! operator operates on either `typeof myNumber` or `typeof myString`, converting them to boolean values. Since the value of both `!typeof myNumber` and `!typeof myString` is false, the if condition fails, and control goes to else block.
+
+To make the ! operator operate on the equality expression, one needs to add parentheses:
+
+```
+if (!(typeof myNumber === "string"))
+```
+
+Or simply use the inequality operator:
+
+```
+if (typeof myNumber !== "string")
+```
 
 </p>
 
@@ -10002,6 +10305,578 @@ for(var in in in) {
 </p>
 
 </details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 64. What is the output of below code?
+
+```javascript
+const numbers = [11, 25, 31, 23, 33, 18, 200];
+numbers.sort();
+console.log(numbers);
+```
+
+- 1:  [11, 18, 23, 25, 31, 33, 200]
+- 2:  [11, 18, 200, 23, 25, 31, 33]
+- 3:  [11, 25, 31, 23, 33, 18, 200]
+- 4:  Cannot sort numbers
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+
+By default, the sort method sorts elements alphabetically. This is because elemented converted to strings and strings compared in UTF-16 code units order. Hence, you will see the above numbers not sorted as expected. In order to sort numerically just supply a comparator function which handles numeric sorts.
+
+```javascript
+const numbers = [11, 25, 31, 23, 33, 18, 200];
+numbers.sort((a, b) => a - b);
+console.log(numbers);
+```
+
+**Note:** Sort() method changes the original array.
+</p>
+
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 65. What is the output order of below code?
+
+```javascript
+setTimeout(() => {console.log('1')}, 0);
+Promise.resolve('hello').then(() => console.log('2'));
+console.log('3');
+```
+
+- 1:  1, 2, 3
+- 2:  1, 3, 2
+- 3:  3, 1, 2
+- 4:  3, 2, 1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+When the JavaScript engine parses the above code, the first two statements are asynchronous which will be executed later and third statement is synchronous statement which will be moved to callstack, executed and prints the number 3 in the console. Next, Promise is native in ES6 and it will be moved to Job queue which has high priority than callback queue in the execution order. At last, since setTimeout is part of WebAPI the callback function moved to callback queue and executed. Hence, you will see number 2 printed first followed by 1.
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 66. What is the output of below code?
+
+```javascript
+console.log(name);
+console.log(message());
+var name = 'John';
+(function message() {
+   console.log('Hello John: Welcome');
+});
+```
+
+- 1:  John, Hello John: Welcome
+- 2:  undefined, Hello John, Welcome
+- 3:  Reference error: name is not defined, Reference error: message is not defined
+- 4:  undefined, Reference error: message is not defined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+IIFE(Immediately Invoked Function Expression) is just like any other function expression which won't be hoisted. Hence, there will be a reference error for message call.
+The behavior would be the same with below function expression of message1,
+```javascript
+console.log(name);
+console.log(message());
+var name = 'John';
+var message = function () {
+   console.log('Hello John: Welcome');
+});
+```
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 67. What is the output of below code?
+
+```javascript
+message()
+
+function message() {
+  console.log("Hello");
+}
+function message() {
+  console.log("Bye");
+}
+```
+
+- 1:  Reference error: message is not defined
+- 2:  Hello
+- 3:  Bye
+- 4:  Compile time error
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+As part of hoisting, initially JavaScript Engine or compiler will store first function in heap memory but later rewrite or replaces with redefined function content.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 68. What is the output of below code?
+
+```javascript
+var currentCity = "NewYork";
+
+var changeCurrentCity = function() {
+  console.log('Current City:', currentCity);
+  var currentCity = "Singapore";
+  console.log('Current City:', currentCity);
+}
+
+changeCurrentCity();
+```
+
+- 1:  NewYork, Singapore
+- 2:  NewYork, NewYork
+- 3:  undefined, Singapore
+- 4:  Singapore, Singapore
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+Due to hositing feature, the variables declared with `var` will have `undefined` value in the creation phase so the outer variable `currentCity` will get same `undefined` value. But after few lines of code JavaScript engine found a new function call(`changeCurrentCity()`) to update the current city with `var` re-declaration. Since each function call will create a new execution context, the same variable will have `undefined` value before the declaration and new value(`Singapore`) after the declarion. Hence, the value `undefined` print first followed by new value `Singapore` in the execution phase.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 69. What is the output of below code in an order?
+
+```javascript
+function second() {
+	var message;
+  console.log(message);
+}
+
+function first() {
+	var message="first";
+  second();
+  console.log(message);
+}
+
+var message = "default";
+first();
+console.log(message);
+```
+
+- 1:  undefined, first, default
+- 2:  default, default, default
+- 3:  first, first, default
+- 4:  undefined, undefined, undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Each context(global or functional) has it's own variable environment and the callstack of variables in a LIFO order. So you can see the message variable value from second, first functions in an order followed by global context message variable value at the end.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 70. What is the output of below code?
+
+```javascript
+var expressionOne = function functionOne() {
+  console.log("functionOne");
+}
+functionOne();
+```
+
+- 1:  functionOne is not defined
+- 2:  functionOne
+- 3:  console.log("functionOne")
+- 4:  undefined
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+The function call `functionOne` is not going to be part of scope chain and it has it's own execution context with the enclosed variable environment. i.e, It won't be accessed from global context. Hence, there will be an error while invoking the function as `functionOne is not defined`.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 71. What is the output of below code?
+
+```javascript
+const user = {
+  name: 'John',
+  eat() {
+    console.log(this);
+    var eatFruit = function() {
+      console.log(this);
+    }
+    eatFruit()
+  }
+}
+user.eat();
+```
+
+- 1:  {name: "John", eat: f}, {name: "John", eat: f}
+- 2:  Window {...}, Window {...}
+- 3:  {name: "John", eat: f}, undefined
+- 4:  {name: "John", eat: f}, Window {...}
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+`this` keyword is dynamic scoped but not lexically scoped . In other words, it doesn't matter where `this` has been written but how it has been invoked really matter. In the above code snippet, the `user` object invokes `eat` function so `this` keyword refers to `user` object but `eatFruit` has been invoked by `eat` function and `this` will have default `Window` object.
+
+The above pit fall fixed by three ways,
+
+1. In ES6, the arrow function will make `this` keyword as lexically scoped. Since the surrounding object of `this` object is `user` object, the `eatFruit` function will contain `user` object for `this` object.
+```javascript
+const user = {
+  name: 'John',
+  eat() {
+    console.log(this);
+    var eatFruit = () => {
+      console.log(this);
+    }
+    eatFruit()
+  }
+}
+user.eat();
+```
+The next two solutions have been used before ES6 introduced.
+
+2.  It is possible create a reference of `this` into a separate variable and use that new variable inplace of `this` keyword inside `eatFruit` function. This is a common practice in jQuery and AngularJS before ES6 introduced.
+```javascript
+const user = {
+  name: 'John',
+  eat() {
+    console.log(this);
+    var self = this;
+    var eatFruit = () => {
+      console.log(self);
+    }
+    eatFruit()
+  }
+}
+user.eat();
+```
+3. The `eatFruit` function can bind explicitly with `this` keyword where it refers `Window` object.
+```javascript
+const user = {
+  name: 'John',
+  eat() {
+    console.log(this);
+    var eatFruit = function() {
+      console.log(this);
+    }
+    return eatFruit.bind(this)
+  }
+}
+user.eat()();
+```
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 72. What is the output of below code?
+
+```javascript
+let message = 'Hello World!';
+message[0] = 'J';
+console.log(message)
+
+let name = 'John';
+name = name + ' Smith';
+console.log(name);
+```
+
+- 1:  Jello World!, John Smith
+- 2:  Jello World!, John
+- 3:  Hello World!, John Smith
+- 4:  Hello World!, John
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+In JavaScript, primitives are immutable i.e. there is no way to change a primitive value once it gets created. So when you try to update the string's first character, there is no change in the string value and prints the same initial value `Hello World!`. Whereas in the later example, the concatenated value is re-assigned to the same variable which will result into creation of new memory block with the reference pointing to `John Smith` value and the old memory block value(`John`) will be garbage collected.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 73. What is the output of below code?
+
+```javascript
+let user1 = { 
+      name : 'Jacob',
+      age : 28
+    };
+    
+let user2 = {    
+      name : 'Jacob',
+      age : 28
+    };
+    
+console.log(user1 === user2);
+```
+
+- 1:  True
+- 2:  False
+- 3:  Compile time error
+
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+In JavaScript, the variables such as objects, arrays and functions comes under pass by reference. When you try to compare two objects with same content, it is going to compare memory address or reference of those variables. These variables always create separate memory blocks hence the comparison is always going to return false value.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 74. What is the output of below code?
+
+```javascript
+function greeting() {
+  setTimeout(function() {
+    console.log(message);
+  }, 5000);
+  const message = "Hello, Good morning";
+}
+greeting();
+```
+
+- 1:  Undefined
+- 2:  Reference error: 
+- 3:  Hello, Good morning
+- 4:  null
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The variable `message` is still treated as closure(since it has been used in inner function) eventhough it has been declared after setTimeout function. The function with in setTimeout function will be sent to WebAPI and the variable declaration executed with in 5 seconds with the assigned value. Hence, the text declared for the variable will be displayed.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 75. What is the output of below code?
+
+```javascript
+const a = new Number(10);
+const b = 10;
+console.log(a === b);
+```
+
+- 1:  False
+- 2:  True 
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 1
+Eventhough both variables `a` and `b` refer a number value, the first declaration is based on constructor function and the type of the variable is going to be `object` type. Whereas the second declaration is primitive assignment with a number and the type is `number` type. Hence, the equality operator `===` will output `false` value.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 76. What is the type of below function?
+
+```javascript
+function add(a, b) {
+  console.log("The input arguments are: ", a, b);
+  return a + b;
+}
+```
+
+- 1:  Pure function
+- 2:  Impure function 
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+Eventhough the above function returns the same result for the same arguments(input) that are passed in the function, the `console.log()` statement causes a function to have side effects because it affects the state of an external code. i.e, the `console` object's state and depends on it to perform the job. Hence, the above function considered as impure function.
+</p>
+</details>
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 77. What is the output of below code?
+
+```javascript
+const promiseOne = new Promise((resolve, reject) => setTimeout(resolve, 4000));
+const promiseTwo = new Promise((resolve, reject) => setTimeout(reject, 4000));
+
+Promise.all([promiseOne, promiseTwo]).then(data => console.log(data));
+```
+
+- 1:  [{status: "fullfilled", value: undefined}, {status: "rejected", reason: undefined}]
+- 2:  [{status: "fullfilled", value: undefined}, Uncaught(in promise)]
+- 3:  Uncaught (in promise)
+- 4:  [Uncaught(in promise), Uncaught(in promise)]
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+The above promises settled at the same time but one of them resolved and other one rejected. When you use `.all` method on these promises, the result will be short circuted by throwing an error due to rejection in second promise. But If you use `.allSettled` method then result of both the promises will be returned irrespective of resolved or rejected promise status without throwing any error.
+
+```javascript
+Promise.allSettled([promiseOne, promiseTwo]).then(data => console.log(data));
+```
+</p>
+</details> 
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 78. What is the output of below code?
+
+```javascript
+try {
+  setTimeout(() => {
+    console.log('try block');
+    throw new Error(`An exception is thrown`)
+  }, 1000);
+} catch(err) {
+  console.log('Error: ', err);
+}
+```
+
+- 1:  try block, Error: An exception is thrown
+- 2:  Error: An exception is thrown
+- 3:  try block, Uncaught Error: Exception is thrown
+- 4:  Uncaught Error: Exception is thrown
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 3
+If you put `setTimeout` and `setInterval` methods inside the try clause and an exception is thrown, the catch clause will not catch any of them. This is because the try...catch statement works synchronously, and the function in the above code is executed asynchronously after a certain period of time. Hence, you will see runtime exception without catching the error. To resolve this issue, you have to put the try...catch block inside the function as below,
+
+```javascript
+setTimeout(() => {
+   try {
+      console.log('try block');
+      throw new Error(`An exception is thrown`)
+   } catch(err) {
+      console.log('Error: ', err);
+   }
+  
+  }, 1000);
+```
+You can use `.catch()` function in promises to avoid these issues with asynchronous code.
+</p>
+</details> 
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 79. What is the output of below code?
+
+```javascript
+let a = 10;
+if(true){
+  let a = 20;
+  console.log(a, "inside");
+}
+console.log(a, "outside");
+```
+
+- 1:  20, "inside" and 20, "outside"
+- 2:  20, "inside" and 10, "outside"
+- 3:  10, "inside" and 10, "outside"
+- 4:  10, "inside" and 20, "outside"
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 2
+The variable "a" declared inside "if" has block scope and does not affect the value of the outer "a" variable.
+</p>
+</details> 
+
+---
+
+**[⬆ Back to Top](#table-of-contents)**
+
+#### 80. What is the output of below code?
+
+```javascript
+let arr = [1,2,3,4,5,-6,7];
+arr.length = 0;
+console.log(arr);
+```
+
+- 1:  0
+- 2:  Undefined
+- 3:  null
+- 4:  [ ]
+
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+##### Answer: 4
+The length of the array 'arr' has been set to 0, so the array becomes empty.
+</p>
+</details> 
 
 ---
 
